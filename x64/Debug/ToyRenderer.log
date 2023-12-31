@@ -1,0 +1,9 @@
+﻿  geometry.cpp
+  mian.cpp
+E:\ToyRenderer\ToyRenderer\mian.cpp(62,11): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(63,11): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(64,11): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(65,11): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  model.cpp
+  正在生成代码...
+  ToyRenderer.vcxproj -> E:\ToyRenderer\x64\Debug\ToyRenderer.exe
