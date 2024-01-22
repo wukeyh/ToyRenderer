@@ -130,6 +130,7 @@
     <ClInclude Include="camera.h" />
     <ClInclude Include="geometry.h" />
     <ClInclude Include="model.h" />
+    <ClInclude Include="pipeline.h" />
     <ClInclude Include="shader\shader.h" />
     <ClInclude Include="tgaimage.h" />
     <ClInclude Include="platform\win32.h" />
@@ -139,6 +140,7 @@
     <ClCompile Include="geometry.cpp" />
     <ClCompile Include="mian.cpp" />
     <ClCompile Include="model.cpp" />
+    <ClCompile Include="pipeline.cpp" />
     <ClCompile Include="shader\shader.cpp" />
     <ClCompile Include="tgaimage.cpp" />
     <ClCompile Include="platform\win32.cpp" />

@@ -1,6 +1,7 @@
 
 #include "tgaimage.h"
 #include "model.h"
+#include "pipeline.h"
 //#include "platform/win32.h"
 
 const TGAColor white = TGAColor(255, 255, 255, 255);
@@ -9,95 +10,28 @@ const TGAColor red = TGAColor(255, 0, 0, 255);
 const int width = 800;
 const int height = 800;
 
-const vec3f light_dir(0, 0, -1);
+const vec3f light_dir(1, 1, 1);
+const vec3f camera(0, -1, 3);
+const vec3f center(0, 0, 0);
+const vec3f up(0, 1, 0);
 
-void Line(int x0, int y0, int x1, int y1, TGAImage& Image, TGAColor Color)
+
+vec3f m2v(Matrix m)
 {
-	bool steep = false;
-	if(std::abs(x0 - x1) < std::abs(y0 - y1))
-	{
-		std::swap(x0, y0);
-		std::swap(x1, y1);
-		steep = true;
-	}
-	if(x0 > x1)
-	{
-		std::swap(x0, x1);
-		std::swap(y0, y1);
-	}
-
-	int dx = x1 - x0;
-	int dy = y1 - y0;
-	int derror2 = std::abs(dy) * 2;
-	int error2 = 0;
-	int y = y0;
-	for(int x = x0; x <= x1; x++)
-	{
-		if(steep)
-		{
-			Image.set(y, x, Color);
-		}
-		else
-		{
-			Image.set(x, y, Color);
-		}
-		error2 += derror2;
-		if(error2 > dx)
-		{
-			y += (y1 > y0 ? 1 : -1);
-			error2 -= dx * 2;
-		}
-	}
+	return vec3f(m[0][0] / m[3][0], m[1][0] / m[3][0], m[2][0] / m[3][0]);
 }
 
-// 重心坐标判断点是否在三角形内
-vec3f barycentric(vec2i* pts, vec2i p)
+Matrix v2m(vec3f v)
 {
-	vec3i x = vec3i(pts[1].x - pts[0].x, pts[2].x - pts[0].x, p.x - pts[0].x);
-	vec3i y = vec3i(pts[1].y - pts[0].y, pts[2].y - pts[0].y, p.y - pts[0].y);
-
-	vec3i u = x ^ y;
-
-	if(std::abs(u.z) < 1)	return vec3f(-1, 1, 1);
-
-	return vec3f(1. - (u.x + u.y) / (float)u.z, u.x / (float)u.z, u.y / (float)u.z);
+	Matrix m;
+	m[0][0] = v.x;
+	m[1][0] = v.y;
+	m[2][0] = v.z;
+	m[3][0] = 1.0f;
+	return m;
 }
 
 
-vec3f barycentric(vec3f A, vec3f B, vec3f C, vec3f P)
-{
-		vec3f s[2];
-	for(int i = 2; i--;)
-	{
-		s[i][0] = C[i] - A[i];
-		s[i][1] = B[i] - A[i];
-		s[i][2] = A[i] - P[i];
-	}
-
-	vec3f u = s[0] ^ s[1];
-	if(std::abs(u[2]) > 1e-2)
-	{
-		return vec3f(1.f - (u.x + u.y) / u.z, u.y / u.z, u.x / u.z);
-	}
-	return vec3f(-1, 1, 1);
-}
-
-
-// 叉积判断点是否在三角形内
-vec3f CrossProduct(vec2i* pts, vec2i P)
-{
-	// 构建出三角形 ABC 三条边的向量
-	vec2i AB(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
-	vec2i BC(pts[2].x - pts[1].x, pts[2].y - pts[1].y);
-	vec2i CA(pts[0].x - pts[2].x, pts[0].y - pts[2].y);
-
-	// 三角形三个顶点和 P 链接形成的向量
-	vec2i AP(P.x - pts[0].x, P.y - pts[0].y);
-	vec2i BP(P.x - pts[1].x, P.y - pts[1].y);
-	vec2i CP(P.x - pts[2].x, P.y - pts[2].y);
-
-	return vec3f(AB ^ AP, BC ^ BP, CA ^ CP);
-}
 
 void triangle(vec2i* pts, TGAImage& Image, TGAColor Color)
 {
@@ -246,22 +180,29 @@ void renderloop()
 
 int main(int argc, char** argv) {
 	TGAImage image(width, height, TGAImage::RGB);
-
+	TGAImage zbuffer(width, height, TGAImage::GRAYSCALE);
 	std::shared_ptr<Model> model = std::make_shared<Model>("obj/african_head.obj");
 	
 	//std::shared_ptr<float> zbuffer = std::make_shared<float>(width * height, -std::numeric_limits<float>::max());
-
+	/*
 	float* zbuffer = new float[width * height];
 	for(int i = 0; i < width * height; i++)
 	{
 		zbuffer[i] = -std::numeric_limits<float>::max();
-	}
+	}*/
 
 	//vec2i pts[3] = { vec2i(10,10), vec2i(100, 30), vec2i(190, 160) };
 	//vec2i pts[3] = { vec2i(10, 10), vec2i(150, 30), vec2i(70, 160) };
 
 	//triangle(pts, image, red);
+	/*
+	Matrix Model = Matrix::identity();
+	Matrix ModelView = lookat(camera, center, vec3f(0, 1, 0));
+	Matrix Projection = Matrix::identity();
+	Matrix Viewport = viewport(width / 8, height / 8, width * 3 / 4, height * 3 / 4);*/
+	//Projection[3][2] = -1.f / (camera - center).norm();
 
+	/*
 	for(int i = 0; i < model->nfaces(); i++)
 	{
 		std::vector<int> face = model->face(i);
@@ -272,8 +213,10 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < 3; j++)
 		{
 			vec3f v = model->vert(face[j]);
+			normal[j] = model->normal(i, j);
 			tex_coords[j] = model->uv(i, j);
 			screen_coords[j] = world2screen(v);
+			//screen_coords[j] = vec3f(Viewport * Projection * ModelView * Matrix(v));
 			world_coords[j] = v;
 		}
 		vec3f n = (world_coords[2] - world_coords[0]) ^ (world_coords[1] - world_coords[0]);
@@ -289,13 +232,31 @@ int main(int argc, char** argv) {
 		}
 
 		
+	}*/
+
+	lookat(camera, center, up);
+	viewport(width / 8, height / 8, width * 3 / 4, height * 3 / 4);
+	projection(-1.f / (camera - center).norm());
+
+	Shader shader;
+	shader.payload.model = model.get();
+
+	shader.payload.light.direction = light_dir;
+
+	for(int i = 0; i < model->nfaces(); i++)
+	{
+		vec4f screen_coords[3];
+		for(int j = 0; j < 3; j++)
+		{
+			screen_coords[j] = shader.vertex(i, j);
+		}
+		triangle(screen_coords, shader, image, zbuffer);
 	}
+	
 
-	//depthTexture(zbuffer, image, width, height);
-
-	delete[] zbuffer;
-
-	image.flip_vertically(); // i want to have the origin at the left bottom corner of the image
-	image.write_tga_file("output/lesson3_5.tga");
+	image.flip_vertically();	// i want to have the origin at the left bottom corner of the image
+	zbuffer.flip_vertically();	// i want to have the origin at the left bottom corner of the image
+	image.write_tga_file("output/lesson6_2.tga");
+	zbuffer.write_tga_file("output/lesson6_3_zbuffer.tga");
 	return 0;
 }

@@ -2,6 +2,7 @@ E:\ToyRenderer\ToyRenderer\camera.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\camer
 E:\ToyRenderer\ToyRenderer\geometry.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\geometry.obj
 E:\ToyRenderer\ToyRenderer\mian.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\mian.obj
 E:\ToyRenderer\ToyRenderer\model.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\model.obj
+E:\ToyRenderer\ToyRenderer\pipeline.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\pipeline.obj
 E:\ToyRenderer\ToyRenderer\shader\shader.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\shader.obj
 E:\ToyRenderer\ToyRenderer\tgaimage.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\tgaimage.obj
 E:\ToyRenderer\ToyRenderer\platform\win32.cpp;E:\ToyRenderer\ToyRenderer\x64\Debug\win32.obj

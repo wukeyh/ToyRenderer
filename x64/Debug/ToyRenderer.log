@@ -1,81 +1,93 @@
 ﻿  mian.cpp
-E:\ToyRenderer\ToyRenderer\mian.cpp(63,18): warning C4244: “参数”: 从“double”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(63,18): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(63,18): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(63,18): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(63,18): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244: “参数”: 从“t”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:             t=int
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:         and
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,36): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244: “参数”: 从“t”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:             t=int
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:         and
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,27): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244: “参数”: 从“t”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:             t=int
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:         and
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(99,18): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,53): warning C4244: “参数”: 从“int”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,53): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,53): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,53): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,53): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,18): warning C4244: “参数”: 从“int”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,18): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,18): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,18): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(132,18): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,56): warning C4244: “参数”: 从“int”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,56): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,56): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,56): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,56): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,32): warning C4244: “参数”: 从“int”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,32): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,32): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,32): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(140,32): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,56): warning C4244: “参数”: 从“int”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,56): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,56): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,56): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,56): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,32): warning C4244: “参数”: 从“int”转换到“t”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,32): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,32): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,32): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(178,32): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(207,72): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(207,51): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(207,30): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,21): warning C4244: “参数”: 从“t”转换到“int”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,21): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,21): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,21): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,21): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,16): warning C4244: “参数”: 从“t”转换到“int”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,16): warning C4244:         with
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,16): warning C4244:         [
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,16): warning C4244:             t=float
-E:\ToyRenderer\ToyRenderer\mian.cpp(208,16): warning C4244:         ]
-E:\ToyRenderer\ToyRenderer\mian.cpp(231,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(232,81): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(232,66): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
-E:\ToyRenderer\ToyRenderer\mian.cpp(232,51): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\tgaimage.h(78,24): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,53): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,53): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,53): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,53): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,53): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,18): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,18): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,18): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,18): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(66,18): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,56): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,56): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,56): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,56): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,56): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,32): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,32): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,32): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,32): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(74,32): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,56): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,56): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,56): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,56): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,56): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,32): warning C4244: “参数”: 从“int”转换到“T”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,32): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,32): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,32): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(112,32): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(141,72): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(141,51): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(141,30): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,21): warning C4244: “参数”: 从“T”转换到“int”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,21): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,21): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,21): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,21): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,16): warning C4244: “参数”: 从“T”转换到“int”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,16): warning C4244:         with
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,16): warning C4244:         [
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,16): warning C4244:             T=float
+E:\ToyRenderer\ToyRenderer\mian.cpp(142,16): warning C4244:         ]
+E:\ToyRenderer\ToyRenderer\mian.cpp(165,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(166,81): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(166,66): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\mian.cpp(166,51): warning C4244: “参数”: 从“float”转换到“unsigned char”，可能丢失数据
+E:\ToyRenderer\ToyRenderer\geometry.h(129,7): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  E:\ToyRenderer\ToyRenderer\geometry.h(129,7):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\ToyRenderer\ToyRenderer\mian.cpp(136,30):
+  	查看对正在编译的函数 模板 实例化“vec<2,float> operator *<2,float,T>(const vec<2,T> &,const U &)”的引用
+          with
+          [
+              T=float,
+              U=float
+          ]
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(129,14): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(109,7): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  E:\ToyRenderer\ToyRenderer\geometry.h(109,7):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\ToyRenderer\ToyRenderer\mian.cpp(136,44):
+  	查看对正在编译的函数 模板 实例化“vec<2,float> operator +<2,float>(const vec<2,float> &,const vec<2,float> &)”的引用
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(109,15): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(109,23): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(119,10): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  E:\ToyRenderer\ToyRenderer\geometry.h(119,10):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\ToyRenderer\ToyRenderer\mian.cpp(239,28):
+  	查看对正在编译的函数 模板 实例化“vec<3,float> operator -<3,float>(const vec<3,float> &,const vec<3,float> &)”的引用
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(119,18): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  
+E:\ToyRenderer\ToyRenderer\geometry.h(119,26): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+  (编译源文件“mian.cpp”)
+  
   ToyRenderer.vcxproj -> E:\ToyRenderer\x64\Debug\ToyRenderer.exe
